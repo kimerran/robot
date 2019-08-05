@@ -83,3 +83,23 @@ R0B0T> report
 2,0,S
 R0B0T>
 ```
+
+# Debugging options
+To enable debug lines, run the program with DEBUG=robot parameter
+```
+DEBUG=robot npm start
+```
+
+Example output with DEBUG option enabled:
+```
+R0B0T> place 0,0,N
+  robot debugline: { currentFace: 'N', isPlaced: true, x: 0, y: 0 } +0ms
+R0B0T> move
+  robot debugline: { currentFace: 'N', isPlaced: true, x: 0, y: 1 } +2s
+R0B0T> move
+  robot debugline: { currentFace: 'N', isPlaced: true, x: 0, y: 2 } +2s
+R0B0T> move
+  robot debugline: { currentFace: 'N', isPlaced: true, x: 0, y: 3 } +1s
+R0B0T> 
+
+```
